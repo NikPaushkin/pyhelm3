@@ -182,7 +182,7 @@ class Chart(ModelWithCommand):
     """
     Model for a reference to a chart.
     """
-    ref: t.Union[DirectoryPath, FilePath, HttpUrl, Name] = Field(
+    ref: t.Union[DirectoryPath, FilePath, HttpUrl, Name, str] = Field(
         ...,
         description = (
             "The chart reference. "
